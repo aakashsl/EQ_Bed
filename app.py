@@ -4,6 +4,10 @@ app = Flask(__name__)
 
 bot_token = '7125527757:AAFgFpO2wKZ7_5Sdm18FeZnSsj6RPTPl7ac'
 
+@app.route('/')
+def home():
+   return "<h1>Welcome to EQ Bed</h1>"
+
 @app.route('/a')
 def hello():
    send()
